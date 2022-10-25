@@ -3,8 +3,9 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>mysite</Name>
     <RootNamespace>mysite</RootNamespace>
-    <InterpreterId>Global|VisualStudio|mysite django tutorial env</InterpreterId>
-    <WebBrowserPort>8080</WebBrowserPort>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+    <WebBrowserPort>8000</WebBrowserPort>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -61,7 +62,7 @@
     <Folder Include="polls\templates\polls\" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|VisualStudio|mysite django tutorial env" />
+    <InterpreterReference Include="Global|PythonCore|3.9" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
