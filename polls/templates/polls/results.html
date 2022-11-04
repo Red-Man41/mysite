@@ -10,12 +10,12 @@
         {{ question.question_text }}
     </h1>
     <ul>
-        {{ question.choice }}
+        {{ object }}
         {% for choice in question.choice.set_all %}
-            <li>
-                
-                {{ choice.choice_text }} -- {{ choice.votes }} vote {{ choice.votes|pluralize }}
-            </li>
+        <li>
+
+            {{ object.choice_text }} -- {{ choice.votes }} vote {{ choice.votes|pluralize }}
+        </li>
         {% endfor %}
     </ul>
 
